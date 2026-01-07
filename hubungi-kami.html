@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - KYZU Gaming Store</title>
+    <link rel="icon" type="image/png" href="kyzu-logo.png">
+    <link rel="apple-touch-icon" href="kyzu-logo.png">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Arial', sans-serif; background-color: #007bff; padding-bottom: 0; }
+
+        .brutal-box {
+            background-color: #ffd700;
+            border: 4px solid black;
+            box-shadow: 10px 10px 0px 0px black;
+        }
+        .text-bold {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+        }
+
+        header {
+            background-color: #ffd700;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid black;
+        }
+        .brand { display: flex; align-items: center; gap: 15px; }
+        .brand-logo-img {
+            width: 60px; height: 60px;
+            border: 2px solid black; border-radius: 50%; background: #fff;
+        }
+        .brand-text h1 {
+            font-size: 3rem; color: #007bff;
+            text-shadow: 4px 4px 0px black;
+            line-height: 0.9; margin-bottom: 5px;
+        }
+        .brand-text p {
+            font-size: 1.5rem; color: white;
+            text-shadow: 3px 3px 0px black; font-weight: 900;
+        }
+        nav .btn {
+            background-color: white; border: 3px solid black;
+            padding: 10px 25px; font-size: 1.2rem; font-weight: 900;
+            cursor: pointer; margin-left: 15px;
+            box-shadow: 5px 5px 0px black;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        nav .btn:active { transform: translate(2px, 2px); box-shadow: 3px 3px 0px black; }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        .section-header {
+            padding: 15px 30px; margin-bottom: 30px;
+            font-size: 2rem; color: black;
+        }
+
+        .content-box {
+            background: white;
+            border: 4px solid black;
+            box-shadow: 10px 10px 0px black;
+            padding: 40px;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: white;
+            border: 3px solid black;
+            padding: 10px 20px;
+            font-weight: 900;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 30px;
+            box-shadow: 5px 5px 0px black;
+            font-family: 'Impact', sans-serif;
+            text-transform: uppercase;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        .back-btn:active { transform: translate(2px, 2px); box-shadow: 3px 3px 0px black; }
+
+        .contact-link {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            border: 4px solid black;
+            box-shadow: 8px 8px 0px black;
+            font-weight: 900;
+            font-size: 1.5rem;
+            font-family: 'Impact', sans-serif;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 0px black;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        .contact-link:active { transform: translate(4px, 4px); box-shadow: 4px 4px 0px black; }
+        
+        .wa-bg { background-color: #25D366; }
+        .shopee-bg { background-color: #EE4D2D; }
+
+        footer {
+            background-color: #ffd700; border-top: 4px solid black;
+            padding: 30px; text-align: center; font-weight: bold; font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand"><img src="kyzu-logo.png" alt="Mascot" class="brand-logo-img"><div class="brand-text text-bold"><h1>KYZU</h1><p>GAMING STORE</p></div></div>
+        <nav><a href="index.html"><button class="btn">Home</button></a><a href="hubungi-kami.html"><button class="btn">Hubungi Kami</button></a></nav>
+    </header>
+    <div class="container">
+        <a href="index.html" class="back-btn">« KEMBALI KE HOME</a>
+        <div class="brutal-box section-header text-bold">HUBUNGI KAMI</div>
+        <div class="content-box">
+            <p style="margin-bottom: 30px; font-weight: bold; font-size: 1.3rem;">KLIK TOMBOL DI BAWAH UNTUK MENGHUBUNGI ADMIN:</p>
+            <a href="https://wa.me/6285959947401" target="_blank" class="contact-link wa-bg">WHATSAPP: 0859-5994-7401</a>
+            <a href="https://shopee.co.id/kyzugamess" target="_blank" class="contact-link shopee-bg">SHOPEE: KYZUGAMESS</a>
+        </div>
+    </div>
+    <footer>&copy; 2025 KYZU Gaming Store. Semua game adalah produk digital resmi.</footer>
+</body>
+</html>

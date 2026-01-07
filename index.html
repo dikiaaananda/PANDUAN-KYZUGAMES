@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYZU Gaming Store</title>
+    <link rel="icon" type="image/png" href="kyzu-logo.png">
+    <link rel="apple-touch-icon" href="kyzu-logo.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #007bff;
+            padding-bottom: 0;
+        }
+
+        .brutal-box {
+            background-color: #ffd700;
+            border: 4px solid black;
+            box-shadow: 10px 10px 0px 0px black;
+        }
+
+        .text-bold {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+        }
+
+        header {
+            background-color: #ffd700;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid black;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .brand-logo-img {
+            width: 60px;
+            height: 60px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background: #fff;
+        }
+
+        .brand-text h1 {
+            font-size: 3rem;
+            color: #007bff;
+            text-shadow: 4px 4px 0px black;
+            line-height: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .brand-text p {
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 3px 3px 0px black;
+            font-weight: 900;
+        }
+
+        nav .btn {
+            background-color: white;
+            border: 3px solid black;
+            padding: 10px 25px;
+            font-size: 1.2rem;
+            font-weight: 900;
+            cursor: pointer;
+            margin-left: 15px;
+            box-shadow: 5px 5px 0px black;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+
+        nav .btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 3px 3px 0px black;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            padding: 15px 30px;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: black;
+        }
+
+        .search-bar {
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.5rem;
+            font-family: 'Impact', sans-serif;
+            border: none;
+            outline: none;
+            color: #333;
+        }
+
+        .tutorial-content {
+            padding: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .tutorial-content ol {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        .tutorial-content li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .badge-warning {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 5px 10px;
+            border: 2px solid black;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 15px;
+            box-shadow: 4px 4px 0px black;
+        }
+
+        .action-btn {
+            display: block;
+            width: 100%;
+            background-color: #ffd700;
+            color: black;
+            border: 3px solid black;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 900;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            box-shadow: 5px 5px 0px black;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+
+        .action-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px black;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .game-card {
+            background: white;
+            border: 4px solid black;
+            box-shadow: 10px 10px 0px black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 4px solid black;
+            background-color: #eee;
+            display: none;
+        }
+
+        .game-title {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: black;
+            background-color: #ffd700;
+            border-bottom: 4px solid black;
+        }
+
+        footer {
+            background-color: #ffd700;
+            border-top: 4px solid black;
+            padding: 30px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="kyzu-logo.png" alt="Mascot" class="brand-logo-img">
+            <div class="brand-text text-bold">
+                <h1>KYZU</h1>
+                <p>GAMING STORE</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html"><button class="btn">Home</button></a>
+            <a href="hubungi-kami.html"><button class="btn">Hubungi Kami</button></a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div style="text-align: center; margin-bottom: 40px;">
+            <img src="maskot logo.png" alt="Mascot Center" style="width: 150px; height: 150px; max-width: 50%; filter: drop-shadow(5px 5px 0px #000);">
+        </div>
+
+        <div class="brutal-box section-header text-bold">
+            PANDUAN & TUTORIAL
+        </div>
+
+        <div class="game-grid">
+            
+            <div class="game-card">
+                <div class="game-title text-bold">CARA MASUKIN GAME KE AKUN PRIBADI</div>
+                <div class="tutorial-content">
+                    <p style="margin-bottom: 15px; text-align: center;">Mohon membaca dan mengikuti panduan dengan teliti</p>
+                    <a href="tutorial-install.html" class="action-btn">BUKA PANDUAN</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-title text-bold">CARA PASANG FIX FILE (UNTUK YANG DIKIRIM FIX FILE )</div>
+                <div class="tutorial-content">
+                    <p style="margin-bottom: 15px; text-align: center;">Mohon membaca dan mengikuti panduan dengan teliti</p>
+                    <a href="tutorial-fix.html" class="action-btn">BUKA PANDUAN</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-title text-bold"> TUTORIAL BERMAIN GTA RP (KHUSUS YANG BELI PAKET RP)</div>
+                <div class="tutorial-content">
+                    <p style="margin-bottom: 15px; text-align: center;">Mohon membaca dan mengikuti panduan dengan teliti</p>
+                    <a href="tutorial-fivem.html" class="action-btn">BUKA PANDUAN</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 KYZU Gaming Store. Semua game adalah produk digital resmi.
+    </footer>
+
+</body>
+</html>
